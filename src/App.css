@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "bebas-neue";
+  src: url('fonts/BebasNeue-Regular.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url('fonts/BebasNeue-Regular.ttf');
+}
+
+.App {
+}
+
+.App-header {
+  margin: 0px;
+  background-color: #6FB4B0;
+  color: #FFFFF9;
+  height: 150px;
+}
+
+.App-header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.App-header-top-menu {
+  background-color: #FFFFF9;
+  color: #6FB4B0;
+}
+
+.App-title {
+  font-size: 3em;
+  font-family: bebas-neue;
+}
+
+/*
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
