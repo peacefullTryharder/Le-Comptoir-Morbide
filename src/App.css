@@ -5,8 +5,25 @@
 }
 
 @font-face {
-  font-family: "roboto";
-  src: url('fonts/BebasNeue-Regular.ttf');
+  font-family: "roboto-regular";
+  src: url('fonts/Roboto-Regular.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "roboto-condensed";
+  src: url('fonts/Roboto-Medium.ttf');
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: "timeless";
+  src: url('fonts/Timeless.ttf');
+  font-weight: 300;
+}
+
+*:focus {
+  outline: none;
 }
 
 .App {
@@ -16,7 +33,6 @@
   margin: 0px;
   background-color: #6FB4B0;
   color: #FFFFF9;
-  height: 150px;
 }
 
 .App-header-top {
@@ -27,12 +43,222 @@
 
 .App-header-top-menu {
   background-color: #FFFFF9;
-  color: #6FB4B0;
+  font-family: roboto-condensed;
+  text-transform: uppercase;
+  font-size: 1.5em;
+
+  padding-left: 4px;
+  height: 60px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.App-title {
-  font-size: 3em;
+.App-header-top-menu a {
+  color: #6FB4B0;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.App-header-top-menu a:hover {
+  color: #459c98;
+}
+
+.App-header-bottom {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.App-header-bottom-title {
+  margin-left: 40px;
+}
+
+.App-header-bottom-title-main {
+  font-size: 4.25em;
   font-family: bebas-neue;
+  margin-bottom: -16px;
+}
+
+.App-header-bottom-title-sub {
+  font-size: 1.25em;
+  font-family: timeless;
+  margin-left: 2px;
+}
+
+.App-content {
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.App-content-newsfeed {
+  width: 50%;
+  height: 300px;
+}
+
+.App-content-menu {
+  width: 300px;
+  background-color: #F5F3E7;
+}
+
+.App-content-newsfeed-toptriangle {
+  height: 20px;
+  text-align: right;
+}
+
+.App-content-menu-toptriangle {
+  height: 20px;
+}
+
+.App-content-menu-socialnetworks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.App-content-menu-socialnetworks div {
+  height: 60px;
+  width: 60px;
+  margin-left: 12px;
+  margin-right: 12px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-content-menu-socialnetworks div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#menu-fb {
+  background-color: #527dbf;
+}
+
+#menu-twitter {
+  background-color: #1cc0e1;
+}
+
+#menu-youtube {
+  background-color: #cd332d;
+}
+
+.App-content-menu-item
+{
+}
+
+.menu-item-title
+{
+  background-color: #6FB4B0;
+  font-family: bebas-neue;
+  text-align: center;
+  color: #FFFFF9;
+  font-size: 2em;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.menu-item-content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E4D9;
+}
+
+.menu-item-content.search {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-search-input{
+  border: none;
+  height: 40px;
+  width: 188px;
+  font-family: roboto-regular;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.menu-search-submit{
+  height: 40px;
+  width: 60px;
+  background-color: #6FB4B0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-search-submit:hover{
+  cursor: pointer;
+  background-color: #459c98;
+}
+
+.menu-item-content.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-content-article{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  width: 270px;
+  padding: 15px;
+
+}
+
+.menu-item-content-article.a {
+  background-color: #E6E4D9;
+}
+
+.menu-item-content-article.b {
+  background-color: #EFECE1;
+}
+
+.menu-article-picture{
+  height: 80px;
+  width: 80px;
+  background-color: white;
+}
+
+.menu-article-informations{
+  margin-left: 15px;
+  width: 180px;
+  font-family: roboto-regular;
+}
+
+.menu-article-title{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.menu-article-context {
+  opacity: 0.7;
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+.menu-article-about {
+  font-size: 12px;
+  text-align: justify;
 }
 
 /*
